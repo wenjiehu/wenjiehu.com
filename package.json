@@ -1,0 +1,12 @@
+{
+  "name": "site-wenjiehu",
+  "description": "The site of WenjieHu",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-copy": "~0.4.1"
+  }
+}

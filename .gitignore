@@ -1,0 +1,10 @@
+Thumbs.db
+.project
+*.sublime-project
+*.sublime-workspace
+
+test.html
+
+dest
+bower_components
+node_modules

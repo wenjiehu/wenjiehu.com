@@ -1,0 +1,14 @@
+{
+  "name": "site-wenjiehu",
+  "version": "1.0.0",
+  "main": [
+
+  ],
+  "ignore": [
+
+  ],
+  "dependencies": {
+  	"bootstrap": ">= 3.0.3",
+    "jquery": ">= 1.10.2"
+  }
+}
