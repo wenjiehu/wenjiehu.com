@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        clean: ['dest'],
         copy: {
             main: {
                 files: [{
@@ -30,8 +31,9 @@ module.exports = function(grunt) {
             src: ['js/script.js']
         }
     });
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.registerTask('default', ['copy', 'uglify', 'jshint']);
+    grunt.registerTask('default', ['clean', 'copy', 'uglify', 'jshint']);
 };
