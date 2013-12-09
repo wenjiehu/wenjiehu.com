@@ -1,0 +1,172 @@
+/* common styles */
+ @font-face {
+    font-family:'Glyphicons';
+    src: url('../fonts/glyphicons-regular.eot');
+    src: url('../fonts/glyphicons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-regular.woff') format('woff'), url('../fonts/glyphicons-regular.ttf') format('truetype'), url('../fonts/glyphicons-regular.svg#glyphicons_socialregular') format('svg');
+}
+@font-face {
+    font-family:'Glyphicons Social';
+    src: url('../fonts/glyphicons-social-regular.eot');
+    src: url('../fonts/glyphicons-social-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-social-regular.woff') format('woff'), url('../fonts/glyphicons-social-regular.ttf') format('truetype'), url('../fonts/glyphicons-social-regular.svg#glyphicons_socialregular') format('svg');
+}
+body {
+    padding-top: 90px;
+    font-size: 20px;
+}
+h2 {
+    color: #0191a9;
+}
+.navbar-default {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-default .navbar-brand {
+	color: black;
+    font-size: 32px;
+}
+
+section .row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section-title {
+    color: #47a447;
+    text-align: left;
+    margin: 60px 0 45px;
+}
+.glyphicon-all {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family:'Glyphicons';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-display:before {
+    content:"\E087";
+}
+.glyphicon-snowflake:before {
+    content:"\2744";
+}
+.glyphicon-social {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family:'Glyphicons Social';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-facebook:before {
+    content:"\E031";
+}
+.glyphicon-twitter:before {
+    content:"\E032";
+}
+.glyphicon-wordpress:before {
+    content:"\E010";
+}
+.navbar-brand > .glyphicon-snowflake {
+	line-height: 20px;
+    color: #47a447;
+}
+
+footer {
+    font-size: 16px;
+}
+/* styles for front page */
+
+/* brief introduction */
+.brief-intro {
+    /* text-align: center; */
+    background-color: #0191a9;
+}
+
+.brief-intro .container {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.brief-intro h1, .brief-intro p {
+    color: white;
+}
+/* services */
+.services {
+    background-color: #f7f7f7;
+}
+.single-service {
+    margin-bottom: 60px;
+}
+.single-service > .icon, .single-service > .title {
+    text-align: center;
+}
+.single-service .icon {
+    color: #0191a9;
+    margin-bottom: 32px;
+}
+.single-service .glyphicon, .single-service .glyphicon-social, .single-service .glyphicon-all {
+    font-size: 64px;
+}
+/* portfolios */
+.portfolios hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.single-portfolio {
+    margin: 45px 0 30px;
+}
+.single-portfolio h2 {
+}
+/* client comments */
+.client-says {
+    background-color: #F7F7F7;
+}
+/* contact info */
+ .contact-info {
+    padding-bottom: 160px;
+}
+.contact-info p {
+    text-align: left;
+}
+.contact-info .glyphicon, .contact-info .glyphicon-social {
+    font-size: 32px;
+    margin: 0 5px;
+}
+.contact-info .glyphicon-envelope {
+    color: #d44937;
+}
+.contact-info .glyphicon-facebook {
+    color: #3b5998;
+}
+.contact-info .glyphicon-twitter {
+    color: #00aced;
+}
+
+/* style for portfolio */
+.jumbotron {
+    margin-top: 30px;
+    color: #792c5c;
+}
+
+@media (min-width: 992px) {
+    .brief-intro .container {
+        padding-top: 140px;
+        padding-bottom: 180px;
+        background: url(../images/brief-intro-bg.png) 100% 50% no-repeat;
+    }
+    .brief-intro h1 {
+        font-size: 63px;
+    }
+
+    .single-portfolio {
+        margin-bottom: 45px;
+    }
+}

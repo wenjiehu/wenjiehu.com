@@ -1,39 +1,59 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-        clean: ['dest'],
-        copy: {
-            main: {
-                files: [{
-                    expand: true,
-                    src: ['js/*', 'css/*', 'fonts/*', 'images/*'],
-                    dest: 'dest/',
-                }, {
-                    expand: true,
-                    src: ['index.html', 'favicon.ico', 'robots.txt'],
-                    dest: 'dest/',
-                }]
-            }
+        paths: {
+            app: 'app',
+            dist: 'dist'
         },
-        uglify: {
-            options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-            },
-            build: {
-                src: 'dest/js/script.js',
-                dest: 'dest/js/script.min.js'
+        pkg: grunt.file.readJSON('package.json'),
+        clean: {
+            dist: {
+                src: ['<%= paths.dist %>/*', ]
             }
         },
         jshint: {
             options: {
-                jshintrc: 'js/.jshintrc'
+                jshintrc: '.jshintrc'
             },
-            src: ['js/script.js']
+            src: ['<%= paths.app %>/js/script.js']
+        },
+        copy: {
+            main: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= paths.app %>',
+                    src: ['js/*', 'css/*', 'fonts/*', 'images/*', 'bower_components/**'],
+                    dest: '<%= paths.dist %>',
+                }, {
+                    expand: true,
+                    cwd: '<%= paths.app %>',
+                    src: ['index.html', 'favicon.ico', 'robots.txt'],
+                    dest: '<%= paths.dist %>',
+                }]
+            }
+        },
+        useminPrepare: {
+            html: '<%= paths.dist %>/index.html',
+            options: {
+                flow: {
+                    steps: {
+                        'js': ['concat', 'uglifyjs'],
+                        'css': ['concat', 'cssmin']
+                    },
+                    post: []
+                }
+            }
+        },
+        usemin: {
+            html: '<%= paths.dist %>/index.html',
         }
     });
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.registerTask('default', ['clean', 'copy', 'uglify', 'jshint']);
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.registerTask('default', ['clean', 'jshint', 'copy']);
+    grunt.registerTask('min-script', ['useminPrepare', 'usemin', 'concat', 'uglify', 'cssmin']);
 };
