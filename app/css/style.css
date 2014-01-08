@@ -4,39 +4,7 @@
     src: url('../fonts/glyphicons-regular.eot');
     src: url('../fonts/glyphicons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-regular.woff') format('woff'), url('../fonts/glyphicons-regular.ttf') format('truetype'), url('../fonts/glyphicons-regular.svg#glyphicons_socialregular') format('svg');
 }
-@font-face {
-    font-family:'Glyphicons Social';
-    src: url('../fonts/glyphicons-social-regular.eot');
-    src: url('../fonts/glyphicons-social-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-social-regular.woff') format('woff'), url('../fonts/glyphicons-social-regular.ttf') format('truetype'), url('../fonts/glyphicons-social-regular.svg#glyphicons_socialregular') format('svg');
-}
-body {
-    padding-top: 90px;
-    font-size: 20px;
-}
-h2 {
-    color: #0191a9;
-}
-.navbar-default {
-    background: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-}
 
-.navbar-default .navbar-brand {
-	color: black;
-    font-size: 32px;
-}
-
-section .row {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.section-title {
-    color: #47a447;
-    text-align: left;
-    margin: 60px 0 45px;
-}
 .glyphicon-all {
     position: relative;
     top: 1px;
@@ -48,125 +16,250 @@ section .row {
     line-height: 1;
     -moz-osx-font-smoothing: grayscale;
 }
-.glyphicon-display:before {
-    content:"\E087";
-}
+
 .glyphicon-snowflake:before {
     content:"\2744";
 }
-.glyphicon-social {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family:'Glyphicons Social';
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -moz-osx-font-smoothing: grayscale;
-}
-.glyphicon-facebook:before {
-    content:"\E031";
-}
-.glyphicon-twitter:before {
-    content:"\E032";
-}
-.glyphicon-wordpress:before {
-    content:"\E010";
-}
+
 .navbar-brand > .glyphicon-snowflake {
 	line-height: 20px;
-    color: #47a447;
+    color: #00aff0;
 }
 
-footer {
-    font-size: 16px;
-}
-/* styles for front page */
-
-/* brief introduction */
-.brief-intro {
-    /* text-align: center; */
-    background-color: #0191a9;
+body {
+    padding-top: 50px;
+    font-size: 14px;
 }
 
-.brief-intro .container {
-	padding-top: 60px;
-	padding-bottom: 60px;
+ul, ol {
+    list-style-type: none;
 }
 
-.brief-intro h1, .brief-intro p {
-    color: white;
+section {
+    border-top: 5px solid #eee;
+    padding: 60px 0;
 }
-/* services */
-.services {
-    background-color: #f7f7f7;
+
+section h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 45px;
 }
-.single-service {
-    margin-bottom: 60px;
-}
-.single-service > .icon, .single-service > .title {
+
+figure {
     text-align: center;
 }
-.single-service .icon {
-    color: #0191a9;
-    margin-bottom: 32px;
-}
-.single-service .glyphicon, .single-service .glyphicon-social, .single-service .glyphicon-all {
-    font-size: 64px;
-}
-/* portfolios */
-.portfolios hr {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.single-portfolio {
-    margin: 45px 0 30px;
-}
-.single-portfolio h2 {
-}
-/* client comments */
-.client-says {
-    background-color: #F7F7F7;
-}
-/* contact info */
- .contact-info {
-    padding-bottom: 160px;
-}
-.contact-info p {
-    text-align: left;
-}
-.contact-info .glyphicon, .contact-info .glyphicon-social {
-    font-size: 32px;
-    margin: 0 5px;
-}
-.contact-info .glyphicon-envelope {
-    color: #d44937;
-}
-.contact-info .glyphicon-facebook {
-    color: #3b5998;
-}
-.contact-info .glyphicon-twitter {
-    color: #00aced;
+
+figcaption {
+    margin: 10px 0;
 }
 
-/* style for portfolio */
-.jumbotron {
+blockquote {
+    font-size: 20px;
+}
+
+/* brief intro */
+#brief-intro ul li {
+    min-height: 360px;
+    padding-top: 300px;
+    text-align: center;
+}
+
+.intro-1 {
+    background: url(../images/intro-website.jpg) no-repeat top center;
+}
+
+.intro-2 {
+    background: url(../images/intro-expert.jpg) no-repeat top center;
+}
+
+.intro-3 {
+    background: url(../images/intro-brain.jpg) no-repeat top center;
+}
+
+/* services */
+#service-list figure h2 {
+    font-size: 24px;
+}
+
+#service-list p {
     margin-top: 30px;
-    color: #792c5c;
+}
+
+/* benefit */
+.benefit {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.benefit:nth-child(4) {
+    border-bottom: none;
+}
+
+.benefit-1 {
+    min-height: 600px;
+    background: url(../images/superman.jpg) no-repeat bottom center;
+}
+
+.benefit-2 {
+    min-height: 640px;
+    background: url(../images/responsive.png) no-repeat bottom center;
+}
+
+.benefit-4 {
+    min-height: 500px;
+    background: url(../images/focus.jpg) no-repeat bottom center;
+    background-size: 550px;
+}
+
+.benefit > .description {
+    padding-left: 120px;
+    min-height: 150px;
+}
+
+.benefit-1 > .description {
+    background: url(../images/number-1.jpg) no-repeat;
+}
+
+.benefit-2 > .description {
+    background: url(../images/number-2.jpg) no-repeat;
+}
+
+.benefit-3 > .description {
+    background: url(../images/number-3.jpg) no-repeat;
+}
+
+.benefit-4 > .description {
+    background: url(../images/number-4.jpg) no-repeat;
+}
+
+/* additional styles for "benefit 3" */
+.plugins > li {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 200px;
+}
+
+.plugin-1 {
+    background: url(../images/plugins/feature-wufoo.png) no-repeat top center;
+}
+
+.plugin-2 {
+    background: url(../images/plugins/feature-animation-slider.png) no-repeat top center;
+}
+
+.plugin-3 {
+    background: url(../images/plugins/feature-htmlcss.png) no-repeat top center;
+}
+
+.plugin-4 {
+    background: url(../images/plugins/feature-slider.png) no-repeat top center;
+}
+
+.plugin-5 {
+    background: url(../images/plugins/feature-parallax.png) no-repeat top center;
+}
+
+.plugin-6 {
+    background: url(../images/plugins/feature-filter.png) no-repeat top center;
+}
+
+.plugin-7 {
+    background: url(../images/plugins/feature-column.png) no-repeat top center;
+}
+
+.plugin-8 {
+    background: url(../images/plugins/feature-lightbox.png) no-repeat top center;
+}
+
+.plugin-9 {
+    background: url(../images/plugins/feature-tabs.png) no-repeat top center;
+}
+
+.plugin-10 {
+    background: url(../images/plugins/feature-nav.png) no-repeat top center;
+}
+
+.plugin-11 {
+    background: url(../images/plugins/feature-table.png) no-repeat top center;
+}
+
+.plugin-12 {
+    background: url(../images/plugins/feature-bilingual.png) no-repeat top center;
+}
+
+.plugin-13 {
+    background: url(../images/plugins/feature-gallery.png) no-repeat top center;
+}
+
+.plugin-14 {
+    background: url(../images/plugins/feature-album.png) no-repeat top center;
+}
+
+/* contact info */
+#contact-info ul li {
+    padding-top: 170px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact-info .email {
+    background: url(../images/icon-email.png) no-repeat top center;
+}
+
+#contact-info .facebook {
+    background: url(../images/icon-facebook.png) no-repeat top center;
+}
+
+#contact-info .twitter {
+    background: url(../images/icon-twitter.png) no-repeat top center;
+}
+
+#contact-info .skype {
+    background: url(../images/icon-skype.png) no-repeat top center;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background: #666;
+    color: #999;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+footer a {
+    color: #ccc;
+}
+
+@media (min-width: 768px) {
+    .plugins > li {
+        background-size: auto 160px;
+        padding-top: 160px;
+    }
 }
 
 @media (min-width: 992px) {
-    .brief-intro .container {
-        padding-top: 140px;
-        padding-bottom: 180px;
-        background: url(../images/brief-intro-bg.png) 100% 50% no-repeat;
-    }
-    .brief-intro h1 {
-        font-size: 63px;
+    .plugins > li {
+        background-size: auto 140px;
+        padding-top: 150px;
     }
 
-    .single-portfolio {
-        margin-bottom: 45px;
+    .benefit {
+        min-height: 500px;
+    }
+
+    .benefit-1 {
+        background: url(../images/superman.jpg) no-repeat right;
+    }
+
+    .benefit-2 {
+        background: url(../images/responsive.png) no-repeat right;
+    }
+
+    .benefit-4 {
+        min-height: 400px;
+        background: url(../images/focus.jpg) no-repeat right;
+        background-size: 480px;
     }
 }
