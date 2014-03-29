@@ -3,8 +3,11 @@ Thumbs.db
 *.sublime-project
 *.sublime-workspace
 
+.DS_Store
+
 test.html
 
+.tmp
 dist
 bower_components
 node_modules
