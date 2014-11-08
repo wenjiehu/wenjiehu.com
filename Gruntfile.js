@@ -31,6 +31,19 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        less: {
+            development: {
+                files: {
+                    "<%= paths.app %>/css/freelancer.css": "<%= paths.app %>/less/freelancer.less"
+                }
+            }
+        },
+        watch: {
+            less: {
+                files: ['<%= paths.app %>/less/*.less'],
+                tasks: ['less'],
+            },
+        },
         useminPrepare: {
             html: '<%= paths.dist %>/index.html',
             options: {
@@ -47,6 +60,9 @@ module.exports = function(grunt) {
             html: '<%= paths.dist %>/index.html',
         }
     });
+
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-copy');
