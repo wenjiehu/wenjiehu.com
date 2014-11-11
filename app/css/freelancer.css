@@ -208,7 +208,7 @@ section.success {
   border: solid 2px white;
   background: transparent;
   transition: all 0.3s ease-in-out;
-  margin-top: 15px;
+  margin-top: 7px;
 }
 .btn-outline:hover,
 .btn-outline:focus,
@@ -281,11 +281,23 @@ footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
+  text-align: center;
   padding: 25px 0;
   background-color: #233140;
 }
-footer .my-skills p {
-  text-align: left;
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer ul label {
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+footer section {
+  padding: 0;
+}
+footer .around-the-web {
+  margin-bottom: 60px;
 }
 .btn-social {
   display: inline-block;

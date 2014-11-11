@@ -240,7 +240,7 @@ section.success {
 	border: solid 2px white;
 	background: transparent;
 	transition: all 0.3s ease-in-out;
-	margin-top: 15px;
+	margin-top: 7px;
 	&:hover,
 	&:focus,
 	&:active,
@@ -321,13 +321,23 @@ footer {
 		margin-bottom: 50px;
 	}
 	.footer-below {
+		text-align: center;
 		padding: 25px 0;
 		background-color: darken(@brand-primary, 5%);
 	}
-	.my-skills {
-		p {
-			text-align: left;
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		label {
+			margin-right: 16px;
+			margin-bottom: 0;
 		}
+	}
+	section {
+		padding: 0;
+	}
+	.around-the-web {
+		margin-bottom: 60px;
 	}
 }
 
