@@ -15,6 +15,10 @@ a.active {
   color: #18bc9c;
   outline: none;
 }
+a:hover,
+a:active {
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -57,6 +61,10 @@ hr.star-primary {
 hr.star-primary:after {
   background-color: white;
   color: #2c3e50;
+}
+blockquote {
+  font-size: 20px;
+  margin-bottom: 0;
 }
 .img-centered {
   margin: 0 auto;
@@ -154,6 +162,10 @@ section.success {
     padding-top: 75px;
   }
 }
+/* Service */
+#service {
+  background: url(images/bg.png);
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -202,6 +214,10 @@ section.success {
     margin: 0 0 30px;
   }
 }
+/* Testimonial */
+#testimonial {
+  background: url(images/bg.png);
+}
 .btn-outline {
   color: white;
   font-size: 20px;
@@ -217,55 +233,6 @@ section.success {
   color: #18bc9c;
   background: white;
   border: solid 2px white;
-}
-.floating-label-form-group {
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
-}
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-  z-index: 1;
-  position: relative;
-  padding-right: 0;
-  padding-left: 0;
-  border: none;
-  border-radius: 0;
-  font-size: 1.5em;
-  background: none;
-  box-shadow: none !important;
-  resize: none;
-}
-.floating-label-form-group label {
-  display: block;
-  z-index: 0;
-  position: relative;
-  top: 2em;
-  margin: 0;
-  font-size: 0.85em;
-  line-height: 1.764705882em;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
-  -moz-transition: top 0.3s ease,opacity 0.3s ease;
-  -ms-transition: top 0.3s ease,opacity 0.3s ease;
-  transition: top 0.3s ease,opacity 0.3s ease;
-}
-.floating-label-form-group::not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #eeeeee;
-}
-.floating-label-form-group-with-value label {
-  top: 0;
-  opacity: 1;
-}
-.floating-label-form-group-with-focus label {
-  color: #18bc9c;
-}
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
 }
 footer {
   color: white;
