@@ -65,6 +65,7 @@ hr.star-primary:after {
 blockquote {
   font-size: 20px;
   margin-bottom: 0;
+  border-left-color: #18bc9c;
 }
 .img-centered {
   margin: 0 auto;
