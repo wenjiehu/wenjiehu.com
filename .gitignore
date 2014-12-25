@@ -12,5 +12,5 @@ TODO
 .tmp
 dist
 materials
-bower_components
+lib
 node_modules
