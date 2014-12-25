@@ -11,5 +11,6 @@ TODO
 
 .tmp
 dist
+materials
 bower_components
 node_modules
