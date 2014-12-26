@@ -1,7 +1,7 @@
-define(['./classie'], function(classie) {
+define(['jquery'], function($) {
 
     var docElem = document.documentElement,
-        header = document.querySelector('.navbar-fixed-top'),
+        $header = $('.navbar-fixed-top'),
         didScroll = false,
         changeHeaderOn = 300;
 
@@ -17,9 +17,9 @@ define(['./classie'], function(classie) {
     function scrollPage() {
         var sy = scrollY();
         if (sy >= changeHeaderOn) {
-            classie.add(header, 'navbar-shrink');
+            $header.addClass('navbar-shrink');
         } else {
-            classie.remove(header, 'navbar-shrink');
+        	$header.removeClass('navbar-shrink');
         }
         didScroll = false;
     }

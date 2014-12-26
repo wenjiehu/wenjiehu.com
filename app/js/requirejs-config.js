@@ -4,8 +4,7 @@ requirejs.config({
         js: '../js',
         jquery: 'jquery/dist/jquery.min',
         bootstrap: 'bootstrap/dist/js/bootstrap.min',
-        classie: '../js/classie',
-        animatedHeader: '../js/cbpAnimatedHeader'
+        animatedHeader: '../js/animatedHeader'
     },
     shim: {
         bootstrap: {
